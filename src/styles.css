@@ -1,3 +1,6 @@
+/* Google Fonts - Caveat for handwritten style */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 @import 'tailwindcss';
 
 @import 'tw-animate-css';
@@ -135,4 +138,46 @@ code {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Rotten Mochi Custom Styles */
+@theme inline {
+  /* Custom brand colors */
+  --color-cream: #FDFCF8;
+  --color-rose-50: #fff1f2;
+  --color-rose-100: #ffe4e6;
+  --color-rose-400: #fb7185;
+  --color-rose-500: #f43f5e;
+  --color-rose-600: #e11d48;
+  
+  /* Animation timing */
+  --animate-blink: blink 3s infinite both;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 45%, 55%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Dot pattern background */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Caveat handwritten font */
+.font-caveat {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+}
+
+/* Blink animation for mochi eyes */
+.animate-blink {
+  animation: blink 3s infinite both;
 }
