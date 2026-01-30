@@ -56,7 +56,7 @@ export default function RottenMochiHero() {
 						asChild
 					>
 						<a
-							href="https://docs.google.com/forms/d/e/1FAIpQLScWfyOaA0op03VUN1SvKlS9LBWzayWvQj6aeO6dLkDJa9_uDg/viewform?usp=dialog"
+							href="https://forms.gle/mRGhbXw3kh6A38fA8"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
