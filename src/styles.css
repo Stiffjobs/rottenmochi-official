@@ -1,5 +1,4 @@
-/* Google Fonts - Caveat for handwritten style */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @import 'tailwindcss';
 
@@ -9,9 +8,7 @@
 
 body {
   @apply m-0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -142,42 +139,36 @@ code {
 
 /* Rotten Mochi Custom Styles */
 @theme inline {
-  /* Custom brand colors */
-  --color-cream: #FDFCF8;
-  --color-rose-50: #fff1f2;
-  --color-rose-100: #ffe4e6;
-  --color-rose-400: #fb7185;
-  --color-rose-500: #f43f5e;
-  --color-rose-600: #e11d48;
-  
-  /* Animation timing */
-  --animate-blink: blink 3s infinite both;
-  --animate-float: float 6s ease-in-out infinite;
+  /* Brand palette */
+  --color-brand-blue: #60A5FA;
+  --color-brand-blue-dark: #3B82F6;
+  --color-brand-blue-light: #EFF6FF;
+  --color-brand-yellow: #FEF08A;
+  --color-brand-yellow-light: #FEFCE8;
 }
 
-@keyframes blink {
-  0%, 45%, 55%, 100% { transform: scaleY(1); }
-  50% { transform: scaleY(0.1); }
+/* Marquee */
+.marquee-wrap {
+  overflow: hidden;
+  width: 100%;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+.marquee-track {
+  display: flex;
+  gap: 0.75rem;
+  width: max-content;
+  animation: marquee 28s linear infinite;
 }
 
-/* Dot pattern background */
-.bg-dot-pattern {
-  background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
-  background-size: 24px 24px;
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
-/* Caveat handwritten font */
-.font-caveat {
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
-}
-
-/* Blink animation for mochi eyes */
-.animate-blink {
-  animation: blink 3s infinite both;
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

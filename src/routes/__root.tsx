@@ -15,6 +15,11 @@ export const Route = createRootRoute({
       {
         title: 'Rotten Mochi',
       },
+      {
+        name: 'description',
+        content:
+          'Rotten Mochi is a self-discipline app with streaks, rank-ups, and a leaderboard powered by real daily follow-through.',
+      },
     ],
     links: [
       {
