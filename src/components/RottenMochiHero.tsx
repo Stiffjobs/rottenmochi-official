@@ -1,10 +1,10 @@
-import { Link } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router';
 
-import { Button } from '@/components/ui/button'
-import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
-const waitlistUrl = 'https://forms.gle/dfCAxvWTLXwgAxiq5'
+const waitlistUrl = 'https://forms.gle/dfCAxvWTLXwgAxiq5';
 
 const competitors = [
   {
@@ -61,7 +61,7 @@ const competitors = [
     screentime: '4h 22m',
     streak: 4,
   },
-]
+];
 
 const rankTiers = [
   { name: 'Iron', image: '/mochis/iron.png' },
@@ -72,7 +72,7 @@ const rankTiers = [
   { name: 'Emerald', image: '/mochis/emerald.png' },
   { name: 'Diamond', image: '/mochis/diamond.png' },
   { name: 'Mythic', image: '/mochis/mythic.png' },
-]
+];
 
 export default function RottenMochiHero() {
   return (
@@ -81,7 +81,7 @@ export default function RottenMochiHero() {
       <nav className="mx-auto flex max-w-3xl items-center justify-between px-5 py-6">
         <div className="flex items-center gap-2.5">
           <img
-            src="/icon.jpeg"
+            src="/icon.png"
             alt="Rotten Mochi"
             width={32}
             height={32}
@@ -120,7 +120,9 @@ export default function RottenMochiHero() {
           </h1>
 
           <p className="mt-6 max-w-lg text-base leading-relaxed text-neutral-500">
-            Rotten Mochi ranks you against friends based on daily screentime. Lower usage, longer streaks, higher rank. Your Mochi evolves as you earn control.
+            Rotten Mochi ranks you against friends based on daily screentime.
+            Lower usage, longer streaks, higher rank. Your Mochi evolves as you
+            earn control.
           </p>
 
           <div className="mt-10 flex items-center gap-3">
@@ -171,7 +173,9 @@ export default function RottenMochiHero() {
                 key={c.name}
                 className={`grid grid-cols-[2.5rem_1fr_5rem_5rem_4.5rem] items-center gap-3 px-5 py-3.5 md:grid-cols-[2.5rem_1fr_6rem_6rem_5rem] ${i < competitors.length - 1 ? 'border-b border-neutral-100' : ''} ${i === 0 ? 'bg-brand-yellow-light' : ''}`}
               >
-                <span className={`text-sm font-semibold ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-400'}`}>
+                <span
+                  className={`text-sm font-semibold ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-400'}`}
+                >
                   {c.rank}
                 </span>
 
@@ -201,7 +205,9 @@ export default function RottenMochiHero() {
                   {c.streak}d
                 </p>
 
-                <p className={`text-right text-xs font-medium ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-500'}`}>
+                <p
+                  className={`text-right text-xs font-medium ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-500'}`}
+                >
                   {c.tier}
                 </p>
               </div>
@@ -267,7 +273,8 @@ export default function RottenMochiHero() {
             <span className="text-brand-blue">Rank up your Mochi.</span>
           </h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-500">
-            We are building the leaderboard for people who want to spend less time on their phone and more time on what matters.
+            We are building the leaderboard for people who want to spend less
+            time on their phone and more time on what matters.
           </p>
           <Button
             size="lg"
@@ -289,15 +296,21 @@ export default function RottenMochiHero() {
             Rotten Mochi &middot; Screentime competition, coming soon.
           </p>
           <div className="flex items-center gap-4 text-xs text-neutral-500">
-            <Link to="/privacy-policy" className="transition-colors hover:text-neutral-900">
+            <Link
+              to="/privacy-policy"
+              className="transition-colors hover:text-neutral-900"
+            >
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="transition-colors hover:text-neutral-900">
+            <Link
+              to="/terms-of-service"
+              className="transition-colors hover:text-neutral-900"
+            >
               Terms of Service
             </Link>
           </div>
         </div>
       </footer>
     </main>
-  )
+  );
 }
