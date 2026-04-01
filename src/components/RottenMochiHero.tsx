@@ -1,75 +1,77 @@
-import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
-import { ArrowRight } from "lucide-react"
+import { Link } from '@tanstack/react-router'
 
-const waitlistUrl = "https://forms.gle/dfCAxvWTLXwgAxiq5"
+import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
+
+const waitlistUrl = 'https://forms.gle/dfCAxvWTLXwgAxiq5'
 
 const competitors = [
   {
     rank: 1,
-    name: "Maya",
-    handle: "@mayagrind",
-    mochi: "/mochis/mythic.png",
-    tier: "Mythic",
-    screentime: "1h 12m",
+    name: 'Maya',
+    handle: '@mayagrind',
+    mochi: '/mochis/mythic.png',
+    tier: 'Mythic',
+    screentime: '1h 12m',
     streak: 61,
   },
   {
     rank: 2,
-    name: "Jules",
-    handle: "@julesflow",
-    mochi: "/mochis/diamond.png",
-    tier: "Diamond",
-    screentime: "1h 38m",
+    name: 'Jules',
+    handle: '@julesflow',
+    mochi: '/mochis/diamond.png',
+    tier: 'Diamond',
+    screentime: '1h 38m',
     streak: 43,
   },
   {
     rank: 3,
-    name: "Noah",
-    handle: "@noahdeep",
-    mochi: "/mochis/emerald.png",
-    tier: "Emerald",
-    screentime: "2h 05m",
+    name: 'Noah',
+    handle: '@noahdeep',
+    mochi: '/mochis/emerald.png',
+    tier: 'Emerald',
+    screentime: '2h 05m',
     streak: 29,
   },
   {
     rank: 4,
-    name: "Ari",
-    handle: "@arilock",
-    mochi: "/mochis/gold.png",
-    tier: "Gold",
-    screentime: "2h 41m",
+    name: 'Ari',
+    handle: '@arilock',
+    mochi: '/mochis/gold.png',
+    tier: 'Gold',
+    screentime: '2h 41m',
     streak: 18,
   },
   {
     rank: 5,
-    name: "Sam",
-    handle: "@samreset",
-    mochi: "/mochis/silver.png",
-    tier: "Silver",
-    screentime: "3h 10m",
+    name: 'Sam',
+    handle: '@samreset',
+    mochi: '/mochis/silver.png',
+    tier: 'Silver',
+    screentime: '3h 10m',
     streak: 11,
   },
   {
     rank: 6,
-    name: "Lin",
-    handle: "@linstart",
-    mochi: "/mochis/bronze.png",
-    tier: "Bronze",
-    screentime: "4h 22m",
+    name: 'Lin',
+    handle: '@linstart',
+    mochi: '/mochis/bronze.png',
+    tier: 'Bronze',
+    screentime: '4h 22m',
     streak: 4,
   },
 ]
 
 const rankTiers = [
-  { name: "Iron", image: "/mochis/iron.png" },
-  { name: "Bronze", image: "/mochis/bronze.png" },
-  { name: "Silver", image: "/mochis/silver.png" },
-  { name: "Gold", image: "/mochis/gold.png" },
-  { name: "Platinum", image: "/mochis/platinum.png" },
-  { name: "Emerald", image: "/mochis/emerald.png" },
-  { name: "Diamond", image: "/mochis/diamond.png" },
-  { name: "Mythic", image: "/mochis/mythic.png" },
+  { name: 'Iron', image: '/mochis/iron.png' },
+  { name: 'Bronze', image: '/mochis/bronze.png' },
+  { name: 'Silver', image: '/mochis/silver.png' },
+  { name: 'Gold', image: '/mochis/gold.png' },
+  { name: 'Platinum', image: '/mochis/platinum.png' },
+  { name: 'Emerald', image: '/mochis/emerald.png' },
+  { name: 'Diamond', image: '/mochis/diamond.png' },
+  { name: 'Mythic', image: '/mochis/mythic.png' },
 ]
 
 export default function RottenMochiHero() {
@@ -113,7 +115,7 @@ export default function RottenMochiHero() {
           </p>
 
           <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight text-neutral-950 md:text-6xl">
-            Your screentime is a scoreboard.{" "}
+            Your screentime is a scoreboard.{' '}
             <span className="text-brand-blue">Win by using less.</span>
           </h1>
 
@@ -167,9 +169,9 @@ export default function RottenMochiHero() {
             {competitors.map((c, i) => (
               <div
                 key={c.name}
-                className={`grid grid-cols-[2.5rem_1fr_5rem_5rem_4.5rem] items-center gap-3 px-5 py-3.5 md:grid-cols-[2.5rem_1fr_6rem_6rem_5rem] ${i < competitors.length - 1 ? "border-b border-neutral-100" : ""} ${i === 0 ? "bg-brand-yellow-light" : ""}`}
+                className={`grid grid-cols-[2.5rem_1fr_5rem_5rem_4.5rem] items-center gap-3 px-5 py-3.5 md:grid-cols-[2.5rem_1fr_6rem_6rem_5rem] ${i < competitors.length - 1 ? 'border-b border-neutral-100' : ''} ${i === 0 ? 'bg-brand-yellow-light' : ''}`}
               >
-                <span className={`text-sm font-semibold ${i === 0 ? "text-brand-blue-dark" : "text-neutral-400"}`}>
+                <span className={`text-sm font-semibold ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-400'}`}>
                   {c.rank}
                 </span>
 
@@ -199,7 +201,7 @@ export default function RottenMochiHero() {
                   {c.streak}d
                 </p>
 
-                <p className={`text-right text-xs font-medium ${i === 0 ? "text-brand-blue-dark" : "text-neutral-500"}`}>
+                <p className={`text-right text-xs font-medium ${i === 0 ? 'text-brand-blue-dark' : 'text-neutral-500'}`}>
                   {c.tier}
                 </p>
               </div>
@@ -232,7 +234,7 @@ export default function RottenMochiHero() {
                 <div
                   key={`${tier.name}-${i}`}
                   className="flex shrink-0 flex-col items-center gap-2 rounded-xl border border-brand-blue/10 bg-white px-5 py-4"
-                  style={{ minWidth: "6.5rem" }}
+                  style={{ minWidth: '6.5rem' }}
                 >
                   <img
                     src={tier.image}
@@ -261,7 +263,7 @@ export default function RottenMochiHero() {
           className="flex flex-col items-center rounded-2xl border border-brand-blue/15 bg-white px-6 py-12 text-center md:px-12"
         >
           <h2 className="text-2xl font-semibold tracking-tight text-neutral-950 md:text-3xl">
-            Compete on screentime.{" "}
+            Compete on screentime.{' '}
             <span className="text-brand-blue">Rank up your Mochi.</span>
           </h2>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-500">
@@ -282,9 +284,19 @@ export default function RottenMochiHero() {
 
       {/* ── Footer ── */}
       <footer className="mx-auto max-w-3xl border-t border-brand-blue/10 px-5 py-6">
-        <p className="text-center text-xs text-neutral-400">
-          Rotten Mochi &middot; Screentime competition, coming soon.
-        </p>
+        <div className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
+          <p className="text-xs text-neutral-400">
+            Rotten Mochi &middot; Screentime competition, coming soon.
+          </p>
+          <div className="flex items-center gap-4 text-xs text-neutral-500">
+            <Link to="/privacy-policy" className="transition-colors hover:text-neutral-900">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-service" className="transition-colors hover:text-neutral-900">
+              Terms of Service
+            </Link>
+          </div>
+        </div>
       </footer>
     </main>
   )
