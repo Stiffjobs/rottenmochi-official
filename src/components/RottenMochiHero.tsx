@@ -1,11 +1,7 @@
 import { Link } from '@tanstack/react-router';
 
-import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 import { AppleDownloadButton } from './AppleDownloadButton';
-
-const waitlistUrl = 'https://forms.gle/dfCAxvWTLXwgAxiq5';
 
 const competitors = [
 	{
@@ -260,16 +256,7 @@ export default function RottenMochiHero() {
 						We are building the leaderboard for people who want to spend less
 						time on their phone and more time on what matters.
 					</p>
-					<Button
-						size="lg"
-						className="mt-8 rounded-full bg-brand-yellow px-8 py-6 text-sm font-semibold text-neutral-900 shadow-lg shadow-brand-yellow/30 hover:bg-brand-yellow/80"
-						asChild
-					>
-						<a href={waitlistUrl} target="_blank" rel="noopener noreferrer">
-							Join the Waitlist
-							<ArrowRight className="ml-1 size-4" />
-						</a>
-					</Button>
+					<AppleDownloadButton className="mt-8" />
 				</motion.div>
 			</section>
 
