@@ -12,8 +12,8 @@ const competitors = [
 		rank: 1,
 		name: 'Maya',
 		handle: '@mayagrind',
-		mochi: '/mochis/mythic.png',
-		tier: 'Mythic',
+		mochi: '/mochis/monk.png',
+		tier: 'Monk',
 		screentime: '1h 12m',
 		streak: 61,
 	},
@@ -72,7 +72,7 @@ const rankTiers = [
 	{ name: 'Platinum', image: '/mochis/platinum.png' },
 	{ name: 'Emerald', image: '/mochis/emerald.png' },
 	{ name: 'Diamond', image: '/mochis/diamond.png' },
-	{ name: 'Mythic', image: '/mochis/mythic.png' },
+	{ name: 'Monk', image: '/mochis/monk.png' },
 ];
 
 export default function RottenMochiHero() {
