@@ -13,12 +13,12 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Rotten Mochi',
+        title: 'DoomLess',
       },
       {
         name: 'description',
         content:
-          'Rotten Mochi is a self-discipline app with streaks, rank-ups, and a leaderboard powered by real daily follow-through.',
+          'DoomLess is a self-discipline app with streaks, rank-ups, and a leaderboard powered by real daily follow-through.',
       },
     ],
     links: [

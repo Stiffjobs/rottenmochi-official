@@ -5,14 +5,14 @@ const sections = [
 	{
 		title: 'Information we collect',
 		paragraphs: [
-			'Rotten Mochi is built to help users reduce phone screen time through tasks, missions, streaks, and competitive progression. To provide that experience, we may collect information such as account details, profile information, app usage data, screen time-related metrics that you choose to share through the app, mission and task activity, streak history, rank progress, and leaderboard participation data.',
+			'DoomLess is built to help users reduce phone screen time through tasks, missions, streaks, and competitive progression. To provide that experience, we may collect information such as account details, profile information, app usage data, screen time-related metrics that you choose to share through the app, mission and task activity, streak history, rank progress, and leaderboard participation data.',
 			'We may also collect technical information needed to operate and secure the service, including device information, approximate location derived from IP address, log data, crash reports, and analytics about how features are used.',
 		],
 	},
 	{
 		title: 'Face Data and Camera Use',
 		paragraphs: [
-			'Rotten Mochi may request access to the device camera when users choose to complete certain tasks or challenges (for example, taking a photo while smiling or performing a positive activity such as drinking water).',
+			'DoomLess may request access to the device camera when users choose to complete certain tasks or challenges (for example, taking a photo while smiling or performing a positive activity such as drinking water).',
 			'When this feature is used, the app temporarily captures a single facial image provided by the user for the purpose of completing the task.',
 			'We do not create or store biometric identifiers, facial recognition templates, or faceprints.',
 			'We do not use face data to identify users.',
@@ -21,7 +21,7 @@ const sections = [
 	{
 		title: 'How we use information',
 		paragraphs: [
-			'We use information to operate, maintain, and improve Rotten Mochi. This includes showing your progress, calculating streaks and rankings, powering competitive game systems, personalizing tasks and missions, preventing abuse, responding to support requests, and understanding product performance.',
+			'We use information to operate, maintain, and improve DoomLess. This includes showing your progress, calculating streaks and rankings, powering competitive game systems, personalizing tasks and missions, preventing abuse, responding to support requests, and understanding product performance.',
 			'We may also use aggregated or de-identified information to analyze trends, improve engagement systems, and develop future features without identifying individual users.',
 		],
 	},
@@ -35,7 +35,7 @@ const sections = [
 	{
 		title: 'Leaderboards and social features',
 		paragraphs: [
-			'Because Rotten Mochi includes competitive features, certain profile and performance information may be visible to other users. This can include your display name, rank, streak status, mission completion signals, and relative screen time performance when those features are enabled in the app.',
+			'Because DoomLess includes competitive features, certain profile and performance information may be visible to other users. This can include your display name, rank, streak status, mission completion signals, and relative screen time performance when those features are enabled in the app.',
 			'You should only share information in your profile that you are comfortable making visible within the community features of the service.',
 		],
 	},
@@ -69,13 +69,13 @@ const sections = [
 		title: 'Your choices and rights',
 		paragraphs: [
 			'Depending on where you live, you may have rights to access, correct, delete, or restrict certain personal information. You may also be able to update some profile and account information directly through the app when those controls are available.',
-			'If Rotten Mochi offers notifications, emails, or other communications, you can opt out of non-essential messages using the controls we provide.',
+			'If DoomLess offers notifications, emails, or other communications, you can opt out of non-essential messages using the controls we provide.',
 		],
 	},
 	{
 		title: 'Children',
 		paragraphs: [
-			'Rotten Mochi is not intended for children under 13, or a higher minimum age where required by local law. If we learn that personal information has been collected from a child in violation of applicable law, we will take reasonable steps to delete it.',
+			'DoomLess is not intended for children under 13, or a higher minimum age where required by local law. If we learn that personal information has been collected from a child in violation of applicable law, we will take reasonable steps to delete it.',
 		],
 	},
 	{
@@ -87,13 +87,13 @@ const sections = [
 	{
 		title: 'Changes to this policy',
 		paragraphs: [
-			'We may update this Privacy Policy from time to time. If we make material changes, we may provide notice through the app, website, or other appropriate means. Your continued use of Rotten Mochi after an updated policy becomes effective means the updated policy will apply going forward.',
+			'We may update this Privacy Policy from time to time. If we make material changes, we may provide notice through the app, website, or other appropriate means. Your continued use of DoomLess after an updated policy becomes effective means the updated policy will apply going forward.',
 		],
 	},
 	{
 		title: 'Contact',
 		paragraphs: [
-			"If you have questions about this Privacy Policy or want to make a privacy-related request, use Rotten Mochi's official support or contact channel in the app.",
+			"If you have questions about this Privacy Policy or want to make a privacy-related request, use DoomLess's official support or contact channel in the app.",
 		],
 	},
 ] satisfies Array<{ title: string; paragraphs: string[] }>;
@@ -103,12 +103,12 @@ export const Route = createFileRoute('/privacy-policy')({
 	head: () => ({
 		meta: [
 			{
-				title: 'Privacy Policy | Rotten Mochi',
+				title: 'Privacy Policy | DoomLess',
 			},
 			{
 				name: 'description',
 				content:
-					'Read how Rotten Mochi handles account data, screen time metrics, rankings, tasks, competitive features, and face data usage.',
+					'Read how DoomLess handles account data, screen time metrics, rankings, tasks, competitive features, and face data usage.',
 			},
 		],
 	}),
@@ -120,7 +120,7 @@ function PrivacyPolicyPage() {
 			eyebrow="Privacy"
 			title="Privacy Policy"
 			effectiveDate="April 17, 2026"
-			intro="This Privacy Policy explains how Rotten Mochi collects, uses, and shares information when you use our app and related services. Rotten Mochi is a self-discipline app focused on helping users reduce screen time through accountability, challenges, and game-like progression."
+			intro="This Privacy Policy explains how DoomLess collects, uses, and shares information when you use our app and related services. DoomLess is a self-discipline app focused on helping users reduce screen time through accountability, challenges, and game-like progression."
 			sections={sections}
 		/>
 	);

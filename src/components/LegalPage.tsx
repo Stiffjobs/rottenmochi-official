@@ -27,7 +27,7 @@ export default function LegalPage({
           to="/"
           className="inline-flex items-center rounded-full border border-brand-blue/20 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition-colors hover:border-brand-blue/40 hover:text-neutral-950"
         >
-          Back to Rotten Mochi
+          Back to DoomLess
         </Link>
       </div>
 

@@ -71,7 +71,7 @@ const rankTiers = [
 	{ name: 'Monk', image: '/mochis/monk.png' },
 ];
 
-export default function RottenMochiHero() {
+export default function DoomLessHero() {
 	return (
 		<main className="min-h-screen bg-brand-blue-light text-neutral-900">
 			{/* ── Nav ── */}
@@ -79,13 +79,13 @@ export default function RottenMochiHero() {
 				<div className="flex items-center gap-2.5">
 					<img
 						src="/icon.png"
-						alt="Rotten Mochi"
+						alt="DoomLess"
 						width={32}
 						height={32}
 						className="rounded-lg"
 					/>
 					<span className="text-sm font-semibold tracking-tight text-neutral-900">
-						Rotten Mochi
+						DoomLess
 					</span>
 				</div>
 				<AppleDownloadButton />
@@ -109,7 +109,7 @@ export default function RottenMochiHero() {
 					</h1>
 
 					<p className="mt-6 max-w-lg text-base leading-relaxed text-neutral-500">
-						Rotten Mochi ranks you against friends based on daily screentime.
+						DoomLess ranks you against friends based on daily screentime.
 						Lower usage, longer streaks, higher rank. Your Mochi evolves as you
 						earn control.
 					</p>
@@ -264,7 +264,7 @@ export default function RottenMochiHero() {
 			<footer className="mx-auto max-w-3xl border-t border-brand-blue/10 px-5 py-6">
 				<div className="flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
 					<p className="text-xs text-neutral-400">
-						Rotten Mochi &middot; Screentime competition, coming soon.
+						DoomLess &middot; Screentime competition, coming soon.
 					</p>
 					<div className="flex items-center gap-4 text-xs text-neutral-500">
 						<Link
